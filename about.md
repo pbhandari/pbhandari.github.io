@@ -1,30 +1,39 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
+Hi! I am Prajjwal Bhandari. A reader, coder and coffee fanatic currently
+living in Canada. I am in the process of completing my Bachelor's Degree in 
+Computer Science, at the University of Toronto, Scarborough Campus, where I am
+specializing in Software Engineering.
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+I am also a massive Linux Enthusiast and have been using it as my sole
+operating system since the 12<sup>th</sup> grade. Unfortunately the downside
+to this is that I have amassed a tonne of config files---most for applications
+I haven't used in ages---that I can't live without.
+
+However, as valuable as my configs are, the one thing I value more is my coffee.
+As far as I'm concerned, if I have a cup of hot steaming coffee in my hand,
+everything is all right with the world.
+
+## What I actually use
+<div markdown="1" class="what-i-use">
+
+|                     |                                                     |
+|--------------------:|:----------------------------------------------------|
+|Editor               | [vim](http://www.vim.org "If it's good enough for the beast ...")  |
+|Shell                | [zsh](http://www.zsh.org) with [grml's zsh config](https://grml.org/zsh/) |
+|Linux Distribution   | [Arch Linux](https://www.archlinux.org) |
+|Window Manager       | [dwm](http://dwm.suckless.org/) |
+|Browser              | [firefox](https://www.mozilla.com/firefox) with [pentadactyl](http://5digits.org/pentadactyl/) |
+|Email Client         | [mutt](http://www.mutt.org/) |
+|Terminal             | [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) and [tmux](http://tmux.sourceforge.net/) |
+
+</div>
+
+
+<p markdown="1" class="credits">
+This page was created using [Hyde](http://hyde.getpoole.com/) which is a theme,
+designed and built by [@mdo](https://twitter.com/mdo), for
+[Jekyll](http://jekyllrb.com).
 </p>
-
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!

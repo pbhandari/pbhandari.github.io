@@ -1,0 +1,16 @@
+.what-i-use thead {
+    display: none;
+}
+.what-i-use td {
+    padding-left: 10px;
+}
+
+.credits {
+   padding-top: 50px;
+   text-align: center;
+   color: rgba(0,0,0,0.5);
+}
+
+.credits a {
+   color: rgba(0, 50, 90, 0.6);
+}
