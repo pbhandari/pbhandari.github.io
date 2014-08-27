@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         kramdown
-highlighter:         true
+highlighter:      true
 
 # Permalinks
 permalink:        pretty
@@ -15,11 +15,11 @@ baseurl:          /
 author:
   name:           'Prajjwal Bhandari'
   url:            http://pbhandari.ca
+  email:          pbhandari@pbhandari.ca
   github:         http://github.com/pbhandari
   twitter:        https://twitter.com/prajjwal_b
-  key:
+  key:            https://pgp.mit.edu/pks/lookup?op=vindex&search=0x438F5F1D67D55E74
 
 paginate:         5
 
 # Custom vars
-version:          2
