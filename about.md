@@ -16,7 +16,12 @@ However, as valuable as my configs are, the one thing I value more is my coffee.
 As far as I'm concerned, if I have a cup of hot steaming coffee in my hand,
 everything is all right with the world.
 
-## What I actually use
+## How to contact me
+* [Email](mailto:{{ site.author.email }})
+* [Github]({{ site.author.github }})
+* [Twitter]({{ site.author.twitter }})
+
+## What I use
 <div markdown="1" class="what-i-use">
 
 |                     |                                                     |
@@ -33,7 +38,7 @@ everything is all right with the world.
 
 
 <p markdown="1" class="credits">
-This page was created using [Hyde](http://hyde.getpoole.com/) which is a theme,
+This site was created using [Hyde](http://hyde.getpoole.com/) which is a theme,
 designed and built by [@mdo](https://twitter.com/mdo), for
 [Jekyll](http://jekyllrb.com).
 </p>
