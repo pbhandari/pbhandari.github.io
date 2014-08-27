@@ -97,14 +97,12 @@ html {
   }
 }
 
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
-  text-decoration: none;
+.sidebar-nav-item.active {
   font-weight: bold;
 }
 
-a.sidebar-nav-item.active {
-  font-weight: bold;
+.sidebar-nav-item {
+  display: inline;
 }
 
 .sidebar-nav-item:before {
@@ -114,10 +112,6 @@ a.sidebar-nav-item.active {
 
 .sidebar-nav-item:first-child:before {
   content: "";
-}
-
-.sidebar-nav-item {
-  display: inline;
 }
 @media (min-width: 48em) {
   .sidebar-nav-item {
