@@ -1,25 +1,25 @@
 # Dependencies
-markdown:         redcarpet
-pygments:         true
+markdown:         kramdown
+highlighter:         true
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Prajjwal Bhandari
+tagline:          ''
+description:      'Student. Coder. Caffiene Addict.'
+url:              http://pbhandari.ca
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Prajjwal Bhandari'
+  url:            http://pbhandari.ca
+  github:         http://github.com/pbhandari
+  twitter:        https://twitter.com/prajjwal_b
+  key:
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+version:          2
