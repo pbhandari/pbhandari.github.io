@@ -73,6 +73,7 @@ html {
 /* Sidebar links */
 .sidebar a {
   color: #fff;
+  text-decoration: none;
 }
 
 /* About section */
@@ -88,16 +89,45 @@ html {
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
-  display: block;
+  display: inline;
 }
+@media (min-width: 48em) {
+  .sidebar-nav-item {
+    display: block;
+  }
+}
+
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-  text-decoration: underline;
-}
-.sidebar-nav-item.active {
+  text-decoration: none;
   font-weight: bold;
 }
 
+a.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+.sidebar-nav-item:before {
+  content: " • ";
+  font-weight: normal;
+}
+
+.sidebar-nav-item:first-child:before {
+  content: "";
+}
+
+.sidebar-nav-item {
+  display: inline;
+}
+@media (min-width: 48em) {
+  .sidebar-nav-item {
+    display: block;
+  }
+
+  .sidebar-nav-item:before {
+    content: "";
+  }
+}
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
