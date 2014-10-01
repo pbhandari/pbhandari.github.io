@@ -20,6 +20,11 @@ author:
   twitter:        https://twitter.com/prajjwal_b
   key:            http://p80.pool.sks-keyservers.net/pks/lookup?op=vindex&search=0x438F5F1D67D55E74&fingerprint=on
 
+kramdown:
+    use_coderay: true
+    coderay:
+        coderay_line_numbers: nil
+
 paginate:         5
 
 # Custom vars
