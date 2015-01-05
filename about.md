@@ -8,9 +8,9 @@ Computer Science, at the University of Toronto, Scarborough Campus, where I am
 specializing in Software Engineering.
 
 I am also a massive Linux Enthusiast and have been using it as my sole
-operating system since the 12<sup>th</sup> grade. Unfortunately the downside
-to this is that I have amassed a tonne of config files---most for applications
-I haven't used in ages---that I can't live without.
+operating system for years. Unfortunately the downside to this is that I have
+amassed a tonne of config files---most for applications I haven't used in
+ages---that I can't live without.
 
 However, as valuable as my configs are, the one thing I value more is my coffee.
 As far as I'm concerned, if I have a cup of hot steaming coffee in my hand,
