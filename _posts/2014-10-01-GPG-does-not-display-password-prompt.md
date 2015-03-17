@@ -3,12 +3,7 @@ title: Re-enable GPG password prompt in terminal
 layout: post
 ---
 
-<div class="message" markdown="1">
-This post deals with the issue where `pinentry-curses` does not display
-when it's fed data through `stdin`.
-</div>
-
-# Problem
+## Problem
 So I recently had cause to use GPG to encrypt something and on running the
 command instead of popping up a `pinentry-curses` window it just hung there
 with the following message.
@@ -23,14 +18,14 @@ user: "Prajjwal Bhandari <pbhandari@pbhandari.ca>"
 The larger problem with this, at least on my computer, is that
 `pinentry-curses` hangs waiting for access, and eating up cpu resources.
 
-# Workarounds
+## Workarounds
 
-## Don't feed stuff through stdin
+### Don't feed stuff through stdin
 This isn't always a solution, *but* if none of the other solutions work for
 you, this will fix it. The issue, at-least for me, only happens when something
 is being piped in to gpg.
 
-## Kill it with fire
+### Kill it with fire
 The easy solution to this, and one that I had been using is
 
 ~~~~~~~~~~~~~~
@@ -42,7 +37,7 @@ killall -9 pinentry-curses
 Now, the problem with this is that `kill -9` is ugly, but `pinentry-curses`
 won't respond to the other signals.
 
-## Use another program
+### Use another program
 <div class="message">
 This is not an option for everyone but it is will solve the problem for most
 people.
@@ -65,7 +60,7 @@ the full path to that, like so.
 pinentry-program /usr/bin/pinentry-gtk-2
 ~~~~~~~~~~~~~~
 
-# Solution
+## Solution
 Sometimes, this is not an option, maybe you're on an ssh connection, or on a
 `vty`, or just don't want to use anything graphical. If that is the case: add
 the one of the following lines, or equivalent, to your `~/.bashrc`, and you
