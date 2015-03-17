@@ -26,6 +26,6 @@ kramdown:
     coderay:
         coderay_line_numbers: nil
 
-paginate:         5
+paginate:         25
 
 # Custom vars
