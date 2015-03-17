@@ -16,9 +16,10 @@ author:
   name:           'Prajjwal Bhandari'
   url:            http://pbhandari.ca
   email:          pbhandari@pbhandari.ca
-  github:         http://github.com/pbhandari
-  twitter:        https://twitter.com/prajjwal_b
-  key:            http://p80.pool.sks-keyservers.net/pks/lookup?op=vindex&search=0x438F5F1D67D55E74&fingerprint=on
+  github:         https://github.com/pbhandari
+  keybase:        https://keybase.io/pbhandari
+  twitter:        https://twitter.com/_pbhandari
+  key:            https://pgp.mit.edu/pks/lookup?op=vindex&search=0x438F5F1D67D55E74&fingerprint=on
 
 kramdown:
     use_coderay: true
