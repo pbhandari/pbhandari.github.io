@@ -11,3 +11,8 @@
 .credits a {
    color: rgba(0, 50, 90, 0.6);
 }
+
+.post-title a:hover,
+.post-title a:focus {
+  color: #2688D2;
+}
