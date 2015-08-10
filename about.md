@@ -3,9 +3,9 @@ layout: page
 title: About Me
 ---
 Hi! I am Prajjwal Bhandari. A reader, coder and coffee fanatic currently
-living in Canada. I am in the process of completing my Bachelor's Degree in 
-Computer Science, at the University of Toronto, Scarborough Campus, where I am
-specializing in Software Engineering.
+living in Canada. I have just recently completed my Bachelor's of Science,
+Computer Science, from the University of Toronto.  Currently I am working as a
+Software Developer at IBM where I am working on their Java JIT.
 
 I am also a massive Linux Enthusiast and have been using it as my sole
 operating system for years. Unfortunately the downside to this is that I have
