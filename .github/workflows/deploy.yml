@@ -9,7 +9,13 @@ on:
       - main
 
 jobs:
+  build-resume:
+    uses: pbhandari/resume/.github/workflows/build.yaml@main
+    permissions: {}
+    secrets: inherit
+
   build:
+    needs: build-resume
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -17,51 +23,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build and fetch resume
-        env:
-          GH_TOKEN: ${{ secrets.RESUME_REPO_TOKEN }}
+      - name: Download resume PDF
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: resume-artifacts
+
+      - name: Copy resume PDF to site root
         run: |
-          # Record the most recent run ID before triggering so we can
-          # identify the new run unambiguously below.
-          PREV_RUN_ID=$(gh run list \
-            --repo pbhandari/resume \
-            --workflow build.yaml \
-            --limit 1 \
-            --json databaseId \
-            --jq '.[0].databaseId // ""')
-
-          # Trigger the build workflow in the private resume repo
-          gh workflow run build.yaml --repo pbhandari/resume
-
-          # Poll until a new run appears (up to ~2 minutes)
-          RUN_ID=""
-          for i in $(seq 1 24); do
-            sleep 5
-            RUN_ID=$(gh run list \
-              --repo pbhandari/resume \
-              --workflow build.yaml \
-              --limit 1 \
-              --json databaseId \
-              --jq '.[0].databaseId')
-            if [ -n "$RUN_ID" ] && [ "$RUN_ID" != "$PREV_RUN_ID" ]; then
-              break
-            fi
-            RUN_ID=""
-          done
-
-          if [ -z "$RUN_ID" ]; then
-            echo "Timed out waiting for the resume workflow run to start."
+          find resume-artifacts -name 'resume.pdf' -exec cp {} ./resume.pdf \;
+          if [ ! -f ./resume.pdf ]; then
+            echo "Error: resume.pdf not found in downloaded artifacts"
             exit 1
           fi
-
-          # Wait for the run to finish (exits non-zero if the run fails)
-          gh run watch "$RUN_ID" --repo pbhandari/resume --exit-status
-
-          # Download all artifacts produced by the run
-          gh run download "$RUN_ID" --repo pbhandari/resume --dir resume-artifacts
-
-          # Copy resume.pdf to the website root so it is served at <url>/resume.pdf
-          find resume-artifacts -name 'resume.pdf' -exec cp {} ./resume.pdf \;
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
