@@ -11,8 +11,6 @@ on:
 jobs:
   build-resume:
     uses: pbhandari/resume/.github/workflows/build.yml@main
-    permissions:
-      contents: read
     secrets: inherit
 
   build:
