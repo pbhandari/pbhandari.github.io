@@ -5,6 +5,8 @@ on:
     branches:
       - $default-branch
   pull_request:
+    branches:
+      - $default-branch
 
 jobs:
   build:
@@ -25,7 +27,7 @@ jobs:
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/master'
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       pages: write
