@@ -12,6 +12,8 @@ on:
 jobs:
   build-resume:
     uses: pbhandari/resume/.github/workflows/build.yml@main
+    with:
+      upload_artifact: true
     secrets: inherit
 
   build:
