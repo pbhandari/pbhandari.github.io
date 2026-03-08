@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-resume:
-    uses: pbhandari/resume/.github/workflows/build.yaml@main
+    uses: pbhandari/resume/.github/workflows/build.yml@main
     permissions: {}
     secrets: inherit
 
